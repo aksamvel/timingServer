@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.2.0/socket.io.js"></script>
+    <script src="client-test.js"></script>
+    <title>Test sockets</title>
+  </head>
+  <body>
+
+    <p>Активных соединений: <span id="active-users-count--counter">0</span></p>
+
+    <button id="go-case-page-1">зайти на страницу кейса 1 игроком</button>
+    <button id="go-case-page-2">зайти на страницу кейса 2 игроком</button>
+    <br>
+    <button id="active-user-count-1">Запросить список участников</button>
+    <br>
+    <hr>
+    <button id="create-battle-1">создать поединок 1 игроком</button>
+    <button id="create-battle-2">создать поединок 2 игроком</button>
+    <br>
+    <hr>
+    <button id="join-to-exist-1">подключиться к существующему поединку 1 игроком</button>
+    <input id="battle-id-1" />
+    <input id="battle-session-id-1" />
+    <br>
+    <button id="join-to-exist-2">подключиться к существующему поединку 2 игроком</button>
+    <input id="battle-id-2" />
+    <input id="battle-session-id-2" />
+    <hr>
+    <button id="case-page-device-checked-1">Игрок 1 готов</button>
+    <button id="case-page-device-checked-2">Игрок 2 готов</button>
+    <hr>
+    <button id="case-page-cancel-1">Игрок 1 отмена</button>
+    <button id="case-page-cancel-2">Игрок 2 отмена</button>
+    <br />
+    <button id="case-page-disconnect-1">Игрок 1 дисконнект</button>
+    <button id="case-page-disconnect-2">Игрок 2 дисконнект</button>
+    <hr>
+    <br /><br />
+    <hr>
+    <button id="go-battle-page-1">зайти на страницу батла 1 игроком</button>
+    <input id="battle-page-id-1" />
+    <input id="battle-page-session-id-1" />
+    <br>
+    <button id="go-battle-page-2">зайти на страницу батла 2 игроком</button>
+    <input id="battle-page-id-2" />
+    <input id="battle-page-session-id-2" />
+    <hr>
+    <button id="battle-page-device-checked-1">Игрок 1 готов</button>
+    <button id="battle-page-device-checked-2">Игрок 2 готов</button>
+    <hr>
+    <button id="battle-page-cancel-1">Игрок 1 отмена</button>
+    <button id="battle-page-cancel-2">Игрок 2 отмена</button>
+    <br />
+    <button id="battle-page-disconnect-1">Игрок 1 дисконнект</button>
+    <button id="battle-page-disconnect-2">Игрок 2 дисконнект</button>
+    <br /><br />
+    <hr>
+    <button id="go-tournament-page-1">зайти на страницу турнира 1 игроком</button>
+    <button id="tournament-battle-1">создать поединок 1 игроком</button>
+    <button id="left-tournament-queue-1">покинуть очередь 1 игроком</button>
+    <br />
+    <hr>
+    <button id="go-tournament-page-2">зайти на страницу турнира 2 игроком</button>
+    <button id="tournament-battle-2">создать поединок 2 игроком</button>
+    <button id="left-tournament-queue-2">покинуть очередь 2 игроком</button>
+  </body>
+</html>

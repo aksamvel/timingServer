@@ -1,0 +1,22 @@
+{
+  "timeBeforeDisconnect" : 60,
+  "timeBeforeStartAndProcessEmptyRooms" : 10,
+  "userRoundTime" : 60,
+  "maxPlayersInRoom" : 2,
+  "matchingRules" : [
+     {
+       "id": "unique_opponent"
+     },
+     {
+       "id": "last_battle_time",
+       "time": 1200
+     },
+     {
+       "id": "last_battle_time",
+       "time": 300
+     },
+     {
+       "id": "any_other"
+     }
+   ]
+}

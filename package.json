@@ -1,0 +1,18 @@
+{
+  "name": "itopica_nodejs",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "better-queue": "^3.8.10",
+    "express": "^4.15.2",
+    "fsm-as-promised": "^0.16.0",
+    "promise": "^8.0.2",
+    "socket.io": "^1.7.3"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

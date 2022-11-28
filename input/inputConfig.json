@@ -1,0 +1,42 @@
+{
+  "driver" : "socketIO/socketIO",
+  "controller" : "socketIO/SIODataController",
+  "fromDriverMapping" : {
+    "optionalMapping" : {
+      "tournament-battle" : "tournament-battle",
+      "random-tournament-battle" : "random-tournament-battle",
+      "left-tournament-queue" : "left-tournament-queue",
+      "active-users-count" : "active-users-count",
+      "battle" : "battle",
+      "left-battle-queue" : "left-battle-queue",
+      "join-battle" :  "join-battle",
+      "cancel-battle" : "cancel-battle",
+      "opentok-actions" : "from-stream-info",
+      "change-player" : "change-player",
+      "random-battle" : "random-battle",
+      "device-checked" : "device-checked",
+      "assessment" : "assessment",
+      "self-refereeing" : "self-refereeing",
+      "page-visit" : "page-visit"
+    },
+    "requiredMapping" : {
+      "call-callback" : "call-callback",
+      "connection" : "connect",
+      "disconnect" : "disconnect"
+    }
+  },
+  "toDriverMapping" : {
+    "expectedCommands" : {
+      "join_room" : "join"
+    },
+    "expectedEvents" : {
+      "info" : "info",
+      "join_to_battle" : "join_battle",
+      "full-connected" : "full-connected",
+      "notification" : "notification",
+      "conf_credentials" : "opentok_credentials",
+      "to-stream-info" : "opentok-actions",
+      "reconnect" : "reconnect"
+    }
+  }
+}

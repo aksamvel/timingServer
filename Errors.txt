@@ -1,0 +1,116 @@
+00100 - client_error - session_not_exist - Присылаемый клиентом session_id отсутствует в базе (или у него не waiting статус)
+00101 - client_error - session_not_exist - Присылаемый клиентом session_id отсутствует в оперативной памяти матчинг сервера (allRooms) в случае захода на battle-page
+00102 - client_error - session_not_exist - Присылаемый клиентом session_id отсутствует в оперативной памяти матчинг сервера (allRooms) в случае join-battle
+00103 - client_error - session_not_exist - Присылаемый клиентом session_id отсутствует в оперативной памяти матчинг сервера (allRooms) во время добавления в участники
+
+00105 - client_error - session_not_exist - Присылаемый клиентом session_id отсутствует в оперативной памяти матчинг сервера (allRooms) если сессии не пришли с бэка
+00106 - client_error - session_not_exist - Присылаемый клиентом session_id отсутствует в оперативной памяти матчинг сервера (allRooms) в cлучае отмены поединка
+00107 - client_error - session_not_exist - Присылаемый клиентом session_id отсутствует в оперативной памяти матчинг сервера (allRooms) во время device-checked
+
+00200 - client_error - not_authorized - При коннекте к серверу не передали userId пользователя
+00201 - client_error - not_authorized - При коннекте к серверу не передали userName пользователя
+
+00300 - client_error - missed_workspace_id - При коннекте к серверу не передали workspaceId
+
+00400 - client_error - missed_current_page - При коннекте к серверу не передали currentPage
+
+00500 - client_error - second_user_disconnected - Второй пользователь покинул поединок. Поединок окончен.
+00501 - client_error - second_user_disconnected - Второй пользователь покинул поединок. Поединок окончен.
+00502 - client_error - second_user_disconnected - Второй пользователь покинул поединок. Поединок окончен.
+
+00510 - client_error - missed_session_id (клиент не прислал данные)
+00511 - client_error - missed_session_id (клиент не прислал данные) в старом запросе, который надо удалить
+00520 - client_error - missed_battle_id (клиент не прислал данные)
+00521 - client_error - missed_battle_id (клиент не прислал данные) в старом запросе, который надо удалить
+00530 - client_error - missed_battle_id (клиент не прислал данные)
+
+00540 - client_error - missed_battle_id - Не передан необходимый аргумент battleID.
+00541 - client_error - missed_battle_id - Не передан необходимый аргумент battleID.
+00542 - client_error - missed_battle_id - Не передан необходимый аргумент battleID.
+00543 - client_error - missed_tournament_id - Не передан необходимый аргумент tournamentID.
+00544 - client_error - missed_phase_id - Не передан необходимый аргумент phaseID.
+00545 - client_error - missed_data - Не передан необходимые аргументы.
+00546 - client_error - missed_tournament_id - Не передан необходимый аргумент tournamentID.
+00547 - client_error - missed_phase_id - Не передан необходимый аргумент phaseID.
+
+00550 - client_error - missed_page (клиент не прислал данные)
+00551 - client_error - missed_data (клиент не прислал данные)
+00552 - client_error - missed_tournament_id (клиент не прислал данные)
+00553 - client_error - missed_phase_id (клиент не прислал данные)
+
+00600 - backend_error - Empty sessions from backend during validateSessions method
+00601 - backend_error - Request to get sessions -  missed sessions in JSON
+00602 - backend_error - Request to get sessions -  missed data in JSON
+00603 - backend_error - Request to get sessions - status not success
+00604 - backend_error - Request to start archive error
+00605 - backend_error - Request to get user balance error;
+00606 - backend_error - Request to backend - missed errors in JSON during error status code
+00607 - backend_error - Request to slack error
+00608 - backend_error - Request to get balance error
+00609 - backend_error - Request to get answer from battle creation - data empty
+00610 - backend_error - Request to get answer from battle creation - status not success
+00611 - backend_error - Request getOpentokCredentials - status not success
+00612 - backend_error - Request stopArchiveRecord - status not success
+00613 - backend_error - Request sendRoundHistory - status not success
+00614 - backend_error - Request stopRefereeingState - status not success
+00615 - backend_error - BattleId empty in request (Бэкенд сервер не прислал BattleId в запросе о готовности результатов)
+00616 - backend_error - Room with such battle id already missed in NodeJS server
+00617 - backend_error - Request to get answer from findOpponentTournament - status not success
+00618 - backend_error - Request to get answer from findOpponentTournament - data empty
+00619 - backend_error - missed_profile_group_id (Бэкенд сервер не прислал необходимые данные во время матчинга)
+00620 - backend_error - missed_matching_group_id (Бэкенд сервер не прислал необходимые данные во время матчинга)
+00621 - backend_error - matching_group_id should be array
+00622 - backend_error - missed_group_id
+00623 - backend_error - Group not found
+
+00700 - client_error - missed_case_id (клиент не прислал данные)
+
+00800 - client_error - max_players_in_room - Попытка подключения к поединки, где уже 2 пользователя, поединок уже идет
+
+01000 - internal_error - user missed in globalUsers;
+01001 - internal_error -
+01002 - internal_error - Try to mark player as disconnect when such player not first and not second
+01003 - internal_error - Try to cancel battle when such player not first and not second
+
+01201 - internal_error - User not in provided battle
+01202 - internal_error - User not in provided battle
+01203 - internal_error - User not in provided battle
+01204 - internal_error - User not in provided battle
+01205 - internal_error - User not in provided battle
+01206 - internal_error - User not in provided battle
+01207 - internal_error - User not in provided battle
+01208 - internal_error - User already fully disconnected and can't be joined to room
+01209 - internal_error - User disconnected recently and can't be joined to room
+01210 - internal_error - User already fully disconnected and can't be joined to room
+01211 - internal_error - User disconnected recently and can't be joined to room
+01212 - internal_error - User already fully disconnected and can't be joined to room
+01213 - internal_error - User disconnected recently and can't be joined to room
+01214 - internal_error - User already fully disconnected and can't be joined to room
+01215 - internal_error - User disconnected recently and can't be joined to room
+01216 - internal_error - User already fully disconnected and can't be joined to room
+01217 - internal_error - User disconnected recently and can't be joined to room
+01218 - internal_error - User already fully disconnected and can't be joined to room
+01219 - internal_error - User disconnected recently and can't be joined to room
+
+01400 - internal_error - data.rooms empty (Каким то образом в сокет соединении не оказалось комнаты, это непредвиденная ошибка, такого быть не должно)
+
+01500 - client_error - Record enable param can be processed only in WAITING status - record-enable параметр не может быть передан в WAITING статусе
+01501 - client_error - Can't cancel battle with such currentPage and initiator params
+01502 - client_error - Can't cancel battle, where are you not a player
+01504 - client_error - Can't start tournament battle with such currentPage
+01505 - client_error - Can't start battle - Can't start tournament battle, because backend server disallow this operation (Find opponent)
+01507 - client_error - Can't left tournament queue, because not in queue now
+01506 - client_error - Can't left tournament queue, because not in queue now
+01508 - client_error - Can't append to queue, because already in queue now
+
+01600 - client_error - not_enough_balance - Не достаточно баланса для старта записи поединка (во время ивента record-enable)
+01601 - client_error - not_enough_balance - Не достаточно баланса для старта записи поединка (во время старта записи поединка)
+
+
+Помимо этого везде стоит try catch и могут быть непредвиденные, необработанные ошибки
+
+Все ошибки сыпятся в консоль и слак
+
+Еще есть дебаг логи, они все сыпятся в консоль и парочка из них сыпется в слак
+
+Дебаги не останавливают процесс, а ошибки вызывают throw
